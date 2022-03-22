@@ -18,6 +18,7 @@ pygame.display.set_caption("Flappy Bird")
 background = pygame.image.load('img/bg.png')
 ground = pygame.image.load('img/ground.png')
 button_img = pygame.image.load('img/restart.png')
+space_img = pygame.image.load('img/space.png')
 
 # game variables
 scroll = 0
@@ -31,6 +32,7 @@ score = 0
 passed_pipe = False
 font = pygame.font.SysFont('Times', 60)
 color = (41, 36, 33)  # black
+transparent = (0, 0, 0, 0)
 ground_axis = 750  # ground y-axis
 
 
@@ -152,7 +154,7 @@ bird_group.add(flappy)
 pipe_group = pygame.sprite.Group()
 
 # button
-button = Button(game_width / 2 - 50, game_height / 2 - 100, button_img)
+button = Button(game_width / 2 - 70, game_height / 2 - 70, button_img)
 
 Game_Running = True
 while Game_Running:
@@ -167,6 +169,7 @@ while Game_Running:
     bird_group.draw(screen)
     bird_group.update()
     pipe_group.draw(screen)
+    screen.blit(space_img, (game_width / 2 - 100, game_height / 2 - 100))
 
     # Score
     if len(pipe_group) > 0:
@@ -220,6 +223,7 @@ while Game_Running:
         if event.type == pygame.QUIT or keyboard.is_pressed("esc"):
             Game_Running = False
         if (event.type == pygame.MOUSEBUTTONDOWN or keyboard.is_pressed("space")) and flying == False and lose == False:
+            space_img.fill(transparent)  # Cover the space image
             flying = True
 
     pygame.display.update()
