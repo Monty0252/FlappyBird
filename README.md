@@ -1,6 +1,6 @@
 # Flappy Bird Replica
 
-DESCRIPTION: The game is a copy of the original Flappy bird game, but with a different bird image. The mechanics everything else works the same.
+# DESCRIPTION: The game is a copy of the original Flappy bird game, but with a different bird image. The mechanics everything else works the same.
 
 Controls: 
 1. Start: Space
