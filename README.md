@@ -1,4 +1,4 @@
-Title: Flappy Bird Replica
+#Flappy Bird Replica
 
 DESCRIPTION: The game is a copy of the original Flappy bird game, but with a different bird image. The mechanics everything else works the same.
 
@@ -14,7 +14,8 @@ Installing:
 1. Install PyGame 1.9 from here. http://www.pygame.org/download.shtml
 
 Clone Repository with Public SSHKEY in Repository:
-In the Root Directory run:
+
+1. In the Root Directory run:
 
 ```bash
 install
