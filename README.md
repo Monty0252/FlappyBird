@@ -1,4 +1,4 @@
-#Flappy Bird Replica
+# Flappy Bird Replica
 
 DESCRIPTION: The game is a copy of the original Flappy bird game, but with a different bird image. The mechanics everything else works the same.
 
