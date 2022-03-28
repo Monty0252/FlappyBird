@@ -8,12 +8,15 @@ Controls: Start: Space
           Restart: Click Restart or Press Space or Press R
           
 Installing: 
-Install Python3 from here. https://www.python.org/download/releases/
-Install PyGame 1.9 from here. http://www.pygame.org/download.shtml
+1. Install Python3 from here. https://www.python.org/download/releases/
+
+1. Install PyGame 1.9 from here. http://www.pygame.org/download.shtml
 
 Clone Repository with Public SSHKEY in Repository:
 In the Root Directory run:
 
+```bash
 install
 run python main.py
+```
 
